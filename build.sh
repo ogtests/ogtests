@@ -3,5 +3,4 @@ rm -rf ./dist
 mkdir ./dist
 cp -r assets dist
 npx ts-node ./src/index.ts
-git add ./dist && git commit -m "Generate pages [$(date -Iminutes)]"
-git push
+git add . && git commit -m "Generate pages [$(date -Iminutes)]"

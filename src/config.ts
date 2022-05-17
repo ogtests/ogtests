@@ -1,4 +1,4 @@
-import { generateNonsense } from "./utils";
+import { asset, text } from "./utils";
 
 export interface Config {
   [name: string]: OpenGraphPage | undefined;
@@ -57,24 +57,24 @@ const config: Config = {
     title: "Empty",
   },
   title_long: {
-    title: `Title/Long: ${generateNonsense(200)}`
+    title: `Title/Long: ${text(200, 1)}`
   },
   text: {
     type: 'article',
     title: 'Text',
-    description: generateNonsense(200),
+    description: text(200, 2),
   },
   text_long: {
     type: 'article',
     title: 'Text/Long',
-    description: generateNonsense(1000),
+    description: text(1000, 3),
   },
   image_square: {
     type: 'website',
     title: 'Image/Square',
-    description: generateNonsense(200),
+    description: text(200, 4),
     image: {
-      url: 'assets/calibration-square.png',
+      url: asset('assets/calibration-square.png'),
       width: 600,
       height: 600,
       type: 'image/png',
@@ -84,9 +84,9 @@ const config: Config = {
   image_tall: {
     type: "website",
     title: 'Image/Wide',
-    description: generateNonsense(200),
+    description: text(200, 5),
     image: {
-      url: 'assets/calibration-tall.png',
+      url: asset('assets/calibration-tall.png'),
       width: 400,
       height: 800,
       type: 'image/png',
@@ -96,9 +96,9 @@ const config: Config = {
   image_wide: {
     type: 'website',
     title: 'Image/Wide',
-    description: generateNonsense(200),
+    description: text(200, 6),
     image: {
-      url: 'assets/calibration-wide.png',
+      url: asset('assets/calibration-wide.png'),
       width: 800,
       height: 400,
       type: 'image/png',
@@ -107,15 +107,46 @@ const config: Config = {
   },
   image_multiple: {
     type: 'website',
-    title: 'Image/Wide',
-    description: generateNonsense(200),
-    image: {
-      url: 'assets/calibration-wide.png',
-      width: 800,
-      height: 400,
-      type: 'image/png',
-      alt: 'A wide calibration image'
-    }
+    title: 'Image/Multiple',
+    description: text(200, 7),
+    images: [
+      {
+        url: asset('assets/kirby.png'),
+        type: 'image/png',
+        alt: 'Kirby'
+      },
+      {
+        url: asset('assets/calibration-wide.png'),
+        width: 800,
+        height: 400,
+        type: 'image/png',
+        alt: 'A wide calibration image'
+      }
+    ]
+  },
+  image_gif: {
+    type: 'website',
+    title: 'Image/Gif',
+    description: text(200, 8),
+    images: [
+      {
+        url: asset('assets/firehose.gif'),
+        type: 'image/png',
+        alt: 'Kirby'
+      }
+    ]
+  },
+  url_same: {
+    type: 'website',
+    url: 'https://ogtests.github.io/ogtests/dist/url_same.html',
+    title: 'Url/Same',
+    description: text(200, 8),
+  },
+  url_different: {
+    type: 'website',
+    url: 'https://ogtests.github.io/ogtests/dist/url_different.html',
+    title: 'Url/Different',
+    description: text(200, 8),
   }
 };
 
