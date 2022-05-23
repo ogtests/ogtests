@@ -83,7 +83,7 @@ const config: Config = {
   },
   image_tall: {
     type: "website",
-    title: 'Image/Wide',
+    title: 'Image/Tall',
     description: text(200, 5),
     image: {
       url: asset('assets/calibration-tall.png'),
