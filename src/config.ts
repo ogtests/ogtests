@@ -144,6 +144,7 @@ const config: Config = {
       url: asset('assets/dog.mp4'),
       width: 480,
       height: 480,
+      type: 'video/mp4',
       alt: 'haha funny dog video',
     }
   },
