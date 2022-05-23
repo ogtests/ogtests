@@ -136,18 +136,29 @@ const config: Config = {
       }
     ]
   },
-  url_same: {
+  video_square: {
     type: 'website',
-    url: 'https://ogtests.github.io/ogtests/dist/url_same.html',
-    title: 'Url/Same',
+    title: 'Video/Square',
     description: text(200, 8),
+    video: {
+      url: asset('assets/dog.mp4'),
+      width: 480,
+      height: 480,
+      alt: 'haha funny dog video',
+    }
   },
   url_different: {
     type: 'website',
     url: 'https://ogtests.github.io/ogtests/dist/url_different.html',
     title: 'Url/Different',
     description: text(200, 8),
-  }
+  },
+  url_same: {
+    type: 'website',
+    url: 'https://ogtests.github.io/ogtests/dist/url_same.html',
+    title: 'Url/Same',
+    description: text(200, 8),
+  },
 };
 
 export default config;
