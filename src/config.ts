@@ -64,14 +64,19 @@ const config: Config = {
   title_long: {
     title: `Title/Long: ${text(200, 1)}`
   },
-  text: {
+  description_short: {
     type: 'article',
-    title: 'Text',
+    title: 'Description/Short',
+    description: 'This is a very short description.',
+  },
+  description_medium: {
+    type: 'article',
+    title: 'Description/Medium',
     description: text(200, 2),
   },
-  text_long: {
+  description_long: {
     type: 'article',
-    title: 'Text/Long',
+    title: 'Description/Long',
     description: text(1000, 3),
   },
   image_square: {
