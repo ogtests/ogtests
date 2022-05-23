@@ -56,6 +56,7 @@ function generatePage(entry: OpenGraphPage): JSX.Element {
     <Page>
       {ogMeta}
       {ogImages}
+      {ogVideos}
     </Page>
   );
 }
