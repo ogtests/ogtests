@@ -164,7 +164,7 @@ const config: Config = {
     ]
   },
   video_square: {
-    type: 'website',
+    type: 'video',
     title: 'Video/Square',
     description: text(200, 8),
     video: {
@@ -176,7 +176,7 @@ const config: Config = {
     }
   },
   video_no_mime: {
-    type: 'website',
+    type: 'video',
     title: 'Video/NoMime',
     description: text(200, 8),
     video: {
@@ -187,7 +187,7 @@ const config: Config = {
     }
   },
   video_cropped: {
-    type: 'website',
+    type: 'video',
     title: 'Video/Cropped',
     description: text(200, 8),
     video: {
