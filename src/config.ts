@@ -133,45 +133,45 @@ const config: Config = {
     type: 'website',
     title: 'Image/Gif',
     description: text(200, 8),
-    images: [
-      {
-        url: asset('assets/firehose.gif'),
-        type: 'image/png',
-        alt: 'Firehose'
-      }
-    ]
+    image: {
+      url: asset('assets/firehose.gif'),
+      type: 'image/png',
+      alt: 'Firehose'
+    }
   },
   image_no_mime: {
     type: 'website',
     title: 'Image/NoMime',
     description: text(200, 8),
-    images: [
-      {
-        url: asset('assets/kirby.png'),
-        width: 275,
-        height: 363,
-        alt: 'Kirby'
-      },
-    ]
+    image: {
+      url: asset('assets/kirby.png'),
+      type: 'image/png',
+      width: 275,
+      height: 100,
+      alt: 'Kirby'
+    },
   },
   image_cropped: {
     type: 'website',
     title: 'Image/Cropped',
     description: text(200, 8),
-    images: [
-      {
-        url: asset('assets/kirby.png'),
-        type: 'image/png',
-        width: 275,
-        height: 100,
-        alt: 'Kirby'
-      },
-    ]
+    image: {
+      url: asset('assets/kirby.png'),
+      type: 'image/png',
+      width: 275,
+      height: 100,
+      alt: 'Kirby'
+    },
   },
   video_square: {
     type: 'video',
     title: 'Video/Square',
     description: text(200, 8),
+    image: {
+      url: asset('assets/kirby.png'),
+      type: 'image/png',
+      alt: 'Kirby'
+    },
     video: {
       url: asset('assets/dog.mp4'),
       width: 480,
@@ -184,6 +184,11 @@ const config: Config = {
     type: 'video',
     title: 'Video/NoMime',
     description: text(200, 8),
+    image: {
+      url: asset('assets/kirby.png'),
+      type: 'image/png',
+      alt: 'Kirby'
+    },
     video: {
       url: asset('assets/dog.mp4'),
       width: 480,
@@ -195,6 +200,11 @@ const config: Config = {
     type: 'video',
     title: 'Video/Cropped',
     description: text(200, 8),
+    image: {
+      url: asset('assets/kirby.png'),
+      type: 'image/png',
+      alt: 'Kirby'
+    },
     video: {
       url: asset('assets/dog.mp4'),
       width: 200,
