@@ -132,8 +132,35 @@ const config: Config = {
       {
         url: asset('assets/firehose.gif'),
         type: 'image/png',
-        alt: 'Kirby'
+        alt: 'Firehose'
       }
+    ]
+  },
+  image_no_mime: {
+    type: 'website',
+    title: 'Image/NoMime',
+    description: text(200, 8),
+    images: [
+      {
+        url: asset('assets/kirby.png'),
+        width: 275,
+        height: 363,
+        alt: 'Kirby'
+      },
+    ]
+  },
+  image_cropped: {
+    type: 'website',
+    title: 'Image/Cropped',
+    description: text(200, 8),
+    images: [
+      {
+        url: asset('assets/kirby.png'),
+        type: 'image/png',
+        width: 275,
+        height: 100,
+        alt: 'Kirby'
+      },
     ]
   },
   video_square: {
@@ -145,6 +172,28 @@ const config: Config = {
       width: 480,
       height: 480,
       type: 'video/mp4',
+      alt: 'haha funny dog video',
+    }
+  },
+  video_no_mime: {
+    type: 'website',
+    title: 'Video/NoMime',
+    description: text(200, 8),
+    video: {
+      url: asset('assets/dog.mp4'),
+      width: 480,
+      height: 480,
+      alt: 'haha funny dog video',
+    }
+  },
+  video_cropped: {
+    type: 'website',
+    title: 'Video/Cropped',
+    description: text(200, 8),
+    video: {
+      url: asset('assets/dog.mp4'),
+      width: 200,
+      height: 480,
       alt: 'haha funny dog video',
     }
   },
