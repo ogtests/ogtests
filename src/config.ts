@@ -149,7 +149,7 @@ const config: Config = {
   },
   url_different: {
     type: 'website',
-    url: 'https://ogtests.github.io/ogtests/dist/url_different.html',
+    url: 'https://google.com',
     title: 'Url/Different',
     description: text(200, 8),
   },
