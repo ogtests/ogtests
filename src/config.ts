@@ -7,6 +7,7 @@ export interface Config {
 export type OpenGraphPage = 
   | OpenGraphArticle
   | OpenGraphProfile
+  | OpenGraphVideo
   | OpenGraphWebsite
   | { title: string, type?: undefined };
 
@@ -14,10 +15,10 @@ interface OpenGraphCommon {
   title: string;
   description?: string;
   url?: string;
-  image?: OpenGraphImage;
-  images?: OpenGraphImage[];
-  video?: OpenGraphVideo;
-  videos?: OpenGraphVideo[];
+  image?: OpenGraphImageLink;
+  images?: OpenGraphImageLink[];
+  video?: OpenGraphVideoLink;
+  videos?: OpenGraphVideoLink[];
 }
 
 interface OpenGraphArticle extends OpenGraphCommon {
@@ -32,11 +33,15 @@ interface OpenGraphProfile extends OpenGraphCommon  {
   username?: string;
 }
 
-interface OpenGraphWebsite extends OpenGraphCommon  {
-  type: 'website'
+interface OpenGraphVideo extends OpenGraphCommon {
+  type: 'video';
 }
 
-interface OpenGraphImage {
+interface OpenGraphWebsite extends OpenGraphCommon  {
+  type: 'website';
+}
+
+interface OpenGraphImageLink {
   url: string;
   width?: number;
   height?: number;
@@ -44,7 +49,7 @@ interface OpenGraphImage {
   alt?: string;
 }
 
-interface OpenGraphVideo {
+interface OpenGraphVideoLink {
   url: string;
   width?: number;
   height?: number;

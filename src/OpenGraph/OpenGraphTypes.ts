@@ -1,1 +1,1 @@
-export type OgType = 'article' | 'profile' | 'website';
+export type OgType = 'article' | 'profile' | 'video' | 'website';
