@@ -61,6 +61,12 @@ const config: Config = {
   empty: {
     title: "Empty",
   },
+  title_short: {
+    title: `Title/Short`
+  },
+  title_medium: {
+    title: `Title/Medium: Some extra text to reach 50 characters`
+  },
   title_long: {
     title: `Title/Long: ${text(200, 1)}`
   },
